@@ -67,6 +67,26 @@ extern "C" {
  ** \return E_OK  returns ...
  **/
 extern int32_t funcion(uint8_t a, uint32_t b);
+/*==================[external functions declaration]=========================*/
+/** \brief Funcion Suma
+ **
+ **
+ **
+ ** \param[in]    a primer sumando
+ ** \param[in]    b segundo sumando
+ ** \return E_OK  returns ...
+ **/
+extern uint16_t suma (uint16_t a, uint16_t b);
+
+/** \brief Funcion Suma
+ **
+ **
+ **
+ ** \param[in]    a primer sumando
+ ** \param[in]    b segundo sumando
+ ** \return E_OK  returns ...
+ **/
+extern uint16_t resta (uint16_t a, uint16_t b);
 
 /*==================[cplusplus]==============================================*/
 #ifdef __cplusplus

@@ -41,7 +41,9 @@
  ** @{ */
 
 /*==================[inclusions]=============================================*/
-#include "template.h"
+#include <stdint.h>
+#include "func_maths.h"
+
 
 /*==================[macros and definitions]=================================*/
 
@@ -57,6 +59,17 @@
 extern int32_t funcion(uint8_t a, uint32_t b)
 {
     return 0;
+}
+
+
+extern uint16_t suma (uint16_t a, uint16_t b)
+{
+	return (a+b);
+}
+
+extern uint16_t resta (uint16_t a, uint16_t b)
+{
+	return (a-b);
 }
 
 /** @} doxygen end group definition */
