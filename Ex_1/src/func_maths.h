@@ -43,7 +43,9 @@
  ** @{ */
 
 /*==================[inclusions]=============================================*/
+#include <limits.h>
 #include <stdint.h>
+
 /*==================[cplusplus]==============================================*/
 #ifdef __cplusplus
 extern "C" {
@@ -66,7 +68,7 @@ extern "C" {
  ** \param[in]    b second parameter ...
  ** \return E_OK  returns ...
  **/
-extern int32_t funcion(uint8_t a, uint32_t b);
+extern int32_t funcion(int8_t a, int32_t b);
 /*==================[external functions declaration]=========================*/
 /** \brief Funcion Suma
  **
@@ -76,7 +78,7 @@ extern int32_t funcion(uint8_t a, uint32_t b);
  ** \param[in]    b segundo sumando
  ** \return E_OK  returns ...
  **/
-extern uint16_t suma (uint16_t a, uint16_t b);
+extern int16_t suma (int16_t a, int16_t b);
 
 /** \brief Funcion Resta
  **
@@ -86,7 +88,7 @@ extern uint16_t suma (uint16_t a, uint16_t b);
  ** \param[in]    b segundo Restando
  ** \return E_OK  returns ...
  **/
-extern uint16_t resta (uint16_t a, uint16_t b);
+extern int16_t resta (int16_t a, int16_t b);
 
 /*==================[cplusplus]==============================================*/
 #ifdef __cplusplus

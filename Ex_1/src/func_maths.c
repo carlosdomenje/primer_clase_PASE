@@ -56,20 +56,42 @@
 /*==================[internal functions definition]==========================*/
 
 /*==================[external functions definition]==========================*/
-extern int32_t funcion(uint8_t a, uint32_t b)
+extern int32_t funcion(int8_t a, int32_t b)
 {
     return 0;
 }
 
 
-extern uint16_t suma (uint16_t a, uint16_t b)
+extern int16_t suma (int16_t a, int16_t b)
 {
-	return (a+b);
+	int32_t aux_sum;
+
+	aux_sum = a + b;
+
+	if (aux_sum > SHRT_MAX)
+		return SHRT_MAX;
+
+	else if (aux_sum < -SHRT_MIN)
+		return SHRT_MIN;
+
+	else
+		return (a+b);
 }
 
-extern uint16_t resta (uint16_t a, uint16_t b)
+extern int16_t resta (int16_t a, int16_t b)
 {
-	return (a-b);
+	int32_t aux_resta;
+
+	aux_resta = a - b;
+
+	if (aux_resta > SHRT_MAX)
+		return SHRT_MAX;
+
+	else if (aux_resta < SHRT_MIN)
+		return SHRT_MIN;
+
+	else
+		return (a-b);
 }
 
 /** @} doxygen end group definition */
