@@ -68,11 +68,11 @@ extern int16_t suma (int16_t a, int16_t b)
 
 	aux_sum = a + b;
 
-	if (aux_sum > SHRT_MAX)
-		return SHRT_MAX;
+	if (aux_sum > INT16_MAX)
+		return INT16_MAX;
 
-	else if (aux_sum < -SHRT_MIN)
-		return SHRT_MIN;
+	else if (aux_sum < INT16_MIN)
+		return INT16_MIN;
 
 	else
 		return (a+b);
@@ -84,11 +84,11 @@ extern int16_t resta (int16_t a, int16_t b)
 
 	aux_resta = a - b;
 
-	if (aux_resta > SHRT_MAX)
+	if (aux_resta > INT16_MAX)
 		return SHRT_MAX;
 
-	else if (aux_resta < SHRT_MIN)
-		return SHRT_MIN;
+	else if (aux_resta < INT16_MIN)
+		return INT16_MIN;
 
 	else
 		return (a-b);
